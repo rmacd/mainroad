@@ -1,0 +1,61 @@
+/* base generated with https://google-webfonts-helper.herokuapp.com/fonts/liberation-sans?subsets=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese */
+
+{{ $liberationSansRegularEOT := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.eot" }}
+{{ $liberationSansRegularWOFF := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.woff" }}
+{{ $liberationSansRegularWOFF2 := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.woff2" }}
+{{ $liberationSansRegularTTF := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.ttf" }}
+{{ $liberationSansRegularSVG := resources.Get "fonts/liberation-sans/liberation-sans-v2-regular.svg" }}
+
+{{ $liberationSansItalicEOT := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.eot" }}
+{{ $liberationSansItalicWOFF := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.woff" }}
+{{ $liberationSansItalicWOFF2 := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.woff2" }}
+{{ $liberationSansItalicTTF := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.ttf" }}
+{{ $liberationSansItalicSVG := resources.Get "fonts/liberation-sans/liberation-sans-v2-italic.svg" }}
+
+{{ $liberationSans700EOT := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.eot" }}
+{{ $liberationSans700WOFF := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.woff" }}
+{{ $liberationSans700WOFF2 := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.woff2" }}
+{{ $liberationSans700TTF := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.ttf" }}
+{{ $liberationSans700SVG := resources.Get "fonts/liberation-sans/liberation-sans-v2-bold.svg" }}
+
+/* open-sans-regular - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('{{ $liberationSansRegularEOT.Permalink }}' ); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('{{ $liberationSansRegularEOT.Permalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationSansRegularWOFF2.Permalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationSansRegularWOFF.Permalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationSansRegularTTF.Permalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationSansRegularSVG.Permalink }}#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-italic - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('{{ $liberationSansItalicEOT.Permalink }}'); /* IE9 Compat Modes */
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('{{ $liberationSansItalicEOT.Permalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationSansItalicWOFF2.Permalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationSansItalicWOFF.Permalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationSansItalicTTF.Permalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationSansItalicSVG.Permalink }}#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('{{ $liberationSans700EOT.Permalink }}'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('{{ $liberationSans700EOT.Permalink }}?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ $liberationSans700WOFF2.Permalink }}') format('woff2'), /* Super Modern Browsers */
+       url('{{ $liberationSans700WOFF.Permalink }}') format('woff'), /* Modern Browsers */
+       url('{{ $liberationSans700TTF.Permalink }}') format('truetype'), /* Safari, Android, iOS */
+       url('{{ $liberationSans700SVG.Permalink }}#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {font-family: "Liberation Sans"; src: url("//db.onlinewebfonts.com/t/ce0a932ffdd95f6f3e3648add87ee236.eot"); src: url("//db.onlinewebfonts.com/t/ce0a932ffdd95f6f3e3648add87ee236.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ce0a932ffdd95f6f3e3648add87ee236.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ce0a932ffdd95f6f3e3648add87ee236.woff") format("woff"), url("//db.onlinewebfonts.com/t/ce0a932ffdd95f6f3e3648add87ee236.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ce0a932ffdd95f6f3e3648add87ee236.svg#Liberation Sans") format("svg"); }
