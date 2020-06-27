@@ -20,9 +20,9 @@
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{ end -}}
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
-	{{ $openSansFontStyle := resources.Get "css/open-sans.css" | resources.ExecuteAsTemplate "css/open-sans.css" . -}}
+	{{ $liberationSansFontStyle := resources.Get "css/liberation-sans.css" | resources.ExecuteAsTemplate "css/liberation-sans.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-	<link rel="stylesheet" href="{{ $openSansFontStyle.RelPermalink }}">
+	<link rel="stylesheet" href="{{ $liberationSansFontStyle.RelPermalink }}">
 	{{ range .Site.Params.customCSS -}}
 	<link rel="stylesheet" href="{{ . | relURL }}">
 	{{- end }}
